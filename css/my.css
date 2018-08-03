@@ -13,6 +13,9 @@ body{
 #options-container label{
   width: 80px;
 }
+#form label{
+    color:#ffffff;
+}
 
 .result-set{
     border: 1px solid #ff0000 ;
