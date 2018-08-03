@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IMDB</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/my.css"/>
+        <script src="js/vendor/jquery/jquery-3.1.1.js"></script>
+        <script src="js/vendor/bootstrap/bootstrap.js"></script>
+        <script src="js/imdb.js"></script>
+
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div id="form">
+                        <form action="#" method="GET">
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="movie-name">Search</label>
+                                        <div class="input-group">
+                                          <input value="" type="text" id="movie-name" class="form-control" placeholder="Movie name..."/>
+                                          <div class="input-group-btn" role="group">
+                                            <button type="button" class="btn btn-success pull-right" onclick="search()"><span class="glyphicon glyphicon-search"></span></button>
+                                          </div>
+                                        </div>
+
+                                </div>
+                            </div>
+                            <div id="options-container" style="margin-left:-15px">
+                                <div class="row">
+                                    <div class="col-xs-12"  data-toggle="buttons" style="margin-top: 15px;">
+                                        <label class="btn btn-warning"><input type="checkbox" name="Genres" value="genres"/>Genres</label>
+                                        <label class="btn btn-warning"><input type="checkbox" name="Plot" value="simplePlot"/>Plot</label>
+                                        <label class="btn btn-warning"><input type="checkbox" name="Year" value="year"/>Year</label>
+                                    </div>
+                                </div>
+                                <div  class="row">
+                                    <div class="col-xs-12"  data-toggle="buttons" style="margin-top: 15px;">
+                                        <label class="btn btn-warning"><input type="checkbox" name="Rating" value="rating"/>Rating</label>
+                                        <label class="btn btn-warning"><input type="checkbox" name="Runtime" value="runtime"/>Runtime</label>
+                                        <label class="btn btn-warning"><input type="checkbox" name="Votes" value="votes"/>Votes</label>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <p class="help-block" id="alert-checkboxes" style="display:none">You have to choice at least 3 options</p>
+                    <div id="search-button-container" style="margin-top: 15px">
+
+                    </div>
+                    </form>
+                </div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-7">
+                    <div id="results">
+                        <div class="order-by">
+                            <button id="order" type="button" class="btn btn-primary active" onclick="order()">Grid</button>
+                        </div>
+                        <p class="help-block alert-no-results alert alert-danger" style="display:none">Not found movie with this name &#x2639;. Try again  &#9786;.</p>
+                    </div>
+                    <div class="result-set" style="display:none">
+                        <div class="information">
+                            <h2 class="movie-name">Movie name</h2>
+                            <p class="checkbox-key-information" style="display:none">
+                                <span class="key"></span><span class="value"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

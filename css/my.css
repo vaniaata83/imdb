@@ -1,0 +1,39 @@
+body,html{
+  margin:0;padding:0;width:100%;height:100%;
+}
+.container > div{
+    margin-top: 15px;
+}
+body{
+    background-image: url("../img/images.jpeg");
+    background-size: 100%;
+}
+
+#options-container label{
+  width: 80px;
+}
+
+.result-set{
+    border: 1px solid #ff0000 ;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.information{
+    margin-left: 10px;
+}
+
+.result-set{
+    margin-bottom: 10px;
+    background-color: pink;
+}
+
+.key{
+    font-weight: bold;
+}
+
+.order-by{
+    margin-bottom: 10px;
+    display: none;
+  
+}
