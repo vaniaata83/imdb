@@ -6,7 +6,8 @@ body,html{
 }
 body{
     background-image: url("../img/images.jpeg");
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #options-container label{
